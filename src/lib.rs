@@ -45,6 +45,7 @@ where
         self.cs.set_high()?;
         let slave_buf = self.spi.transfer(&mut master_buf)?;
         self.cs.set_low()?;
+        println!("{:?}", slave_buf);
         let out = ((slave_buf[0] & 0b00000011) << 6) | ((slave_buf[1] & 0b11111100) >> 2);
         return Ok(out & 0xFF);
     }
