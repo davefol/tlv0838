@@ -3,7 +3,7 @@ name = "tlv0838"
 version = "0.1.0"
 edition = "2021"
 liense = "MIT"
-description="embedded_hal driver for TI's TLV0838 ADC chip"
+description="embedded_hal driver for TI's TLV0838/ADC0838 ADC chip"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
